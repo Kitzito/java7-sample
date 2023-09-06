@@ -1735,11 +1735,11 @@ below is KZ added nexus repo
     -->
 <distributionManagement>
 	
-	    <releaseRepository>
+	    <repository>
 	      <id>nexus</id>
 	      <name>java7-sample Releases Nexus Repository</name>
 	      <url>http://127.0.0.1:8081/repository/java7-sample/</url>
-	    </releaseRepository>
+	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>

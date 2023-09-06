@@ -41,6 +41,13 @@
         <wildfly.swarm.version>2.4.0.Final</wildfly.swarm.version>
         <tomee.version>7.0.2</tomee.version>
         <tomcat.version>9.0.4</tomcat.version>
+
+        <!--
+        below are KZ added properties
+        -->
+        <sonar.host.url>http://127.0.0.1:9000/</sonar.host.url>
+        <sonar.login>admin</sonar.login>
+        <sonar.password>0011</sonar.password>
     </properties>
     
     <prerequisites>

@@ -1690,8 +1690,24 @@
                 </plugins>
             </build>
         </profile>
-
-
+<!--
+below is KZ added nexus repo
+    -->
+<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>java7-sample Releases Nexus Repository</name>
+	      <url>http://127.0.0.1:8081/repository/java7-sample/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>java7-sample Snapshot Nexus Repository </name>
+	      <url>http://127.0.0.1:8081/repository/java7-sample2/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 
         <!-- 
             Activate this profile to download javadoc and sources jars. run: 

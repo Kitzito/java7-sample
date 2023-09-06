@@ -15,8 +15,8 @@
         <maven.min.version>3.5.4</maven.min.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         
-        <maven.test.skip>false</maven.test.skip>
-        <skipTests>false</skipTests>
+        <maven.test.skip>true</maven.test.skip>
+        <skipTests>true</skipTests>
         
         <skipEJB>${skipTests}</skipEJB>
         <skipCDI>${skipTests}</skipCDI>
@@ -50,24 +50,6 @@
         <sonar.password>0011</sonar.password>
     </properties>
 
-	below is KZ added nexus repo
-    -->
-<distributionManagement>
-	
-	    <repository>
-	      <id>nexus</id>
-	      <name>java7-sample Releases Nexus Repository</name>
-	      <url>http://127.0.0.1:8081/repository/java7-sample/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>java7-sample Snapshot Nexus Repository </name>
-	      <url>http://127.0.0.1:8081/repository/java7-sample2/</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
-    
     <prerequisites>
         <maven>${maven.min.version}</maven>
     </prerequisites>

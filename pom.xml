@@ -1602,7 +1602,8 @@
                 <!-- Released versions of Tomcat -->
                 <repository>
                     <id>apache.public</id> 
-                    <url>https://repository.apache.org/content/repositories/public/</url> 
+                    <!-- <url>https://repository.apache.org/content/repositories/public/</url> -->
+			<url>http://127.0.0.1:8081/repository/java7-sample/</url>
                     <releases> 
                         <enabled>true</enabled> 
                     </releases> 
@@ -1614,7 +1615,8 @@
                 <!-- About to be released version of Tomcat -->
                 <repository>
                     <id>apache.staging</id> 
-                    <url>https://repository.apache.org/content/repositories/staging/</url> 
+                   <!-- <url>https://repository.apache.org/content/repositories/staging/</url> -->
+			<url>http://127.0.0.1:8081/repository/java7-sample2/</url>
                     <releases> 
                         <enabled>true</enabled> 
                     </releases> 

@@ -15,8 +15,8 @@
         <maven.min.version>3.5.4</maven.min.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         
-        <maven.test.skip>true</maven.test.skip>
-        <skipTests>true</skipTests>
+        <maven.test.skip>false</maven.test.skip>
+        <skipTests>false</skipTests>
         
         <skipEJB>${skipTests}</skipEJB>
         <skipCDI>${skipTests}</skipCDI>
@@ -41,15 +41,8 @@
         <wildfly.swarm.version>2.4.0.Final</wildfly.swarm.version>
         <tomee.version>7.0.2</tomee.version>
         <tomcat.version>9.0.4</tomcat.version>
-
-        <!--
-        below are KZ added properties
-        -->
-        <sonar.host.url>http://127.0.0.1:9000/</sonar.host.url>
-        <sonar.login>admin</sonar.login>
-        <sonar.password>0011</sonar.password>
     </properties>
-
+    
     <prerequisites>
         <maven>${maven.min.version}</maven>
     </prerequisites>
@@ -1692,6 +1685,7 @@
         </profile>
 
 
+
         <!-- 
             Activate this profile to download javadoc and sources jars. run: 
             mvn process-resources -Ddownload Notice: This feature has been removed with 
@@ -1730,25 +1724,6 @@
         </profile>
     </profiles>
 
-	<!--
-below is KZ added nexus repo
-    -->
-<distributionManagement>
-	
-	    <repository>
-	      <id>nexus</id>
-	      <name>java7-sample Releases Nexus Repository</name>
-	      <url>http://127.0.0.1:8081/repository/java7-sample/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>java7-sample Snapshot Nexus Repository </name>
-	      <url>http://127.0.0.1:8081/repository/java7-sample2/</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
-
     <reporting>
         <plugins>
             <plugin>
@@ -1764,4 +1739,3 @@ below is KZ added nexus repo
     </reporting>
 
 </project>
-
